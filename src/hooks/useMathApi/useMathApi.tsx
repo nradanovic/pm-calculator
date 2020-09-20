@@ -6,8 +6,8 @@ export default function useMathApi({ expression }: { expression: string }) {
   const debounceTime = 600;
 
   useEffect(() => {
+    setResult("");
     if (!expression) {
-      setResult("");
       return;
     }
 
