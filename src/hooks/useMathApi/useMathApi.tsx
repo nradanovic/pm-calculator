@@ -12,7 +12,7 @@ export default function useMathApi({ expression }: { expression: string }) {
     }
 
     const fetchData = async () => {
-      const url = "http://api.mathjs.org/v4/";
+      const url = "https://api.mathjs.org/v4/";
       const requestConfig: AxiosRequestConfig = {
         params: {
           expr: expression,
